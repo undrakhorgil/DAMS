@@ -9,7 +9,7 @@ public class DentalAppointmentManagementSystem {
         // Process data
         var appointmentService = new AppointmentService();
 
-        String input = "1st Quarter of 2025";
+        String input = "1st Quarter of the year 2025";
         var appointmentGivenQuater = appointmentService.getAppointmentGivenQuater(input);
         var appointments = JSONConverterUtil.convertPatientArrayToJSON(appointmentGivenQuater);
         System.out.println(appointments);
